@@ -1,4 +1,8 @@
 .backdrop.is-hidden .modal {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  
     transform: translate(-50%, -50%) scale(1.2);
     opacity: 0;
 }
@@ -7,9 +11,9 @@
     position: relative;
     margin: 0 auto 0 auto;
     
-    width: 450px;
+    max-width: 450px;
     padding: 40px;
-    height: 581px;
+    height: 609px;
    
     background-color: var(--maine__color__light);
     opacity: 1;

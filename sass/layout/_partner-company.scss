@@ -15,15 +15,16 @@
 
 .partner__list{
     display: flex;
-    flex-direction: row;
+    
     flex-wrap: wrap;
     align-items: center;
-   margin-left: -30px;
-   margin-bottom: -30px;
+    margin-left: -30px;
+    margin-bottom: -30px;
+   
 }
 .partner__items{
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;   
     
 }
 
@@ -67,7 +68,13 @@
 
     .partner__list{
         display: flex;
-        
+        margin-left: -30px;
+        margin-bottom: -30px;
+            } 
+    
+    .partner__items{
+        margin-left: 30px;
+        margin-bottom: 30px;
     }
 
     .partner__link{
@@ -90,6 +97,14 @@
         width: 170px;
     }
     .partner__list{
+    flex-direction: row;
     justify-content: space-between;
+    margin-left: -30px;
+    margin-bottom: -30px;
     }
+    .partner__items{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    }
+
 }

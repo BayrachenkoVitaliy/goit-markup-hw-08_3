@@ -5,6 +5,7 @@
 }
 .benefits__items{
    max-width: 450px;
+   
    }
 .benefits__picture{
     display: flex;
@@ -20,7 +21,9 @@
     height: 70px;
 }
 .benefits__title{
+    display: flex;
     margin-bottom: 10px;
+    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -35,6 +38,14 @@
     letter-spacing: 0.03em;
     color: var(--maine__color__secondery);
 }
+@media screen  and (max-width:767px) {
+    .benefits__items:not(:last-child){
+        
+            margin-bottom: 30px;
+           }
+    }
+    
+
 @media screen and (min-width: 768px){
 .benefits{
     margin-bottom: 60px;
@@ -48,7 +59,13 @@
        .benefits__items{
         flex-basis: 354px;
         margin-left: 30px;
-        
+        &:nth-child(-n+2){
+            margin-bottom: 30px;
+        }
+    
+       }
+       .benefits__title{
+        justify-content: flex-start;
        }
     
 
@@ -62,9 +79,11 @@
        .benefits__items{
         flex-basis: 270px;
         margin-left: 30px;
+        margin-bottom: 0;
         
        }
        .benefits{
+        margin-bottom: 0;
         padding-bottom: 0;
         padding-top: 94px;
     }

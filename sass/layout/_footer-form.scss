@@ -92,10 +92,16 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     }
 }
 @media screen and (min-width: 768px){
-    .footer-form{
-       
-
-    }
+    .footer-form__box{
+        flex-direction: column;
+      }
+      .button__footer-form{
+        display: block;
+        margin: 0 auto 0 auto;
+      }
+      .footer-form__field{
+        margin-bottom: 20px;
+      }
 }
 
 @media screen and (min-width: 1200px){

@@ -37,10 +37,16 @@
         height: 40px;
         border: none;
         background-color: #0000;
+        &:hover,
+        &:focus{
+            color: var(--accent__color);
+            cursor: pointer;
+        }
      
     }
     .header__mobail-icon{
         margin: 0 auto;
+        fill: currentColor;
     }
 }
 
